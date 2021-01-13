@@ -16,6 +16,7 @@
     </div>
 
     <button
+        :disabled="!isValid()"
         class="btn primary"
         @click.prevent="add">
       Добавить
